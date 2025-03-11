@@ -1,1 +1,157 @@
-
+{
+  "LLM A": {
+    "count": 8,
+    "subcategories": {
+      "Unternehmensstrategie & Geschäftsmodelle": {
+        "count": 5,
+        "Strategien für Unternehmenswachstum": true,
+        "Entwicklung eines Businessmodells": true,
+        "Geschäftsmodellinnovation durch Technologie": true,
+        "Analyse von Erfolgsfaktoren": true,
+        "Skalierung durch internationale Partnerschaften": true
+      },
+      "Technologie & Softwareentwicklung": {
+        "count": 4,
+        "Risikominimierende Refaktorierungsstrategie für Legacy-Anwendungen": true,
+        "Code-Review-Leitfaden für heterogene Entwicklerteams": true,
+        "Microservice-Architektur für skalierbares E-Commerce-System": true,
+        "Datenbankvergleich (SQL/NoSQL/NewSQL) für transaktionsintensive Echtzeitanwendungen": true
+      },
+      "Finanzen & Besteuerung": {
+        "count": 3,
+        "Steuersysteme und Unternehmensgewinne": true,
+        "Steuerliche Aspekte internationaler Expansion": true,
+        "Kosten-Nutzen-Analyse von Shared-Service-Centern": true
+      },
+      "Marktanalyse & Markteintritt": {
+        "count": 4,
+        "Marktanalyse für ein neues Produkt": true,
+        "Markteintrittsstrategien für Schwellenländer": true,
+        "Markterschließungsstrategie für Software-Mittelstand": true,
+        "Analyse von Preismodellen für Cloud-basierte PM-Software": true
+      },
+      "Risikomanagement": {
+        "count": 2,
+        "Politische Stabilität und Risikomanagement": true,
+        "Risikomanagement bei Auslandsinvestitionen": true
+      },
+      "Innovation & Staatliche Förderung": {
+        "count": 2,
+        "Innovationsförderung durch Regierungen": true,
+        "Innovationsstrategie für einen Konzern": true
+      },
+      "Personalwesen & Organisationsentwicklung": {
+        "count": 3,
+        "Talentakquise in Hochtechnologie-Regionen": true,
+        "90-Tage-Einarbeitungsplan für Produktmanager in Technologieunternehmen": true,
+        "Kundenbindungsmaßnahmen für kleine IT-Dienstleister": true
+      },
+      "Operations & Beschaffung": {
+        "count": 1,
+        "Lokal vs. Global Sourcing": true
+      }
+    }
+  },
+  "LLM B": {
+    "count": 8,
+    "subcategories": {
+      "Wirtschaft & Unternehmensführung": {
+        "count": 6,
+        "Steuersysteme und Unternehmensgewinne": true,
+        "Marktanalyse für ein neues Produkt": true,
+        "Entwicklung eines Businessmodells": true,
+        "Analyse von Erfolgsfaktoren": true,
+        "Strategien für Unternehmenswachstum": true,
+        "Geschäftsmodellinnovation durch Technologie": true
+      },
+      "Internationales Geschäft & Expansion": {
+        "count": 5,
+        "Steuerliche Aspekte internationaler Expansion": true,
+        "Risikomanagement bei Auslandsinvestitionen": true,
+        "Skalierung durch internationale Partnerschaften": true,
+        "Lokal vs. Global Sourcing": true,
+        "Markteintrittsstrategien für Schwellenländer": true
+      },
+      "Technologie & Softwareentwicklung": {
+        "count": 4,
+        "Risikominimierende Refaktorierungsstrategie für Legacy-Anwendungen": true,
+        "Code-Review-Leitfaden für heterogene Entwicklerteams": true,
+        "Microservice-Architektur für skalierbares E-Commerce-System": true,
+        "Datenbankvergleich (SQL/NoSQL/NewSQL) für transaktionsintensive Echtzeitanwendungen": true
+      },
+      "Innovation & Strategie": {
+        "count": 3,
+        "Innovationsförderung durch Regierungen": true,
+        "Innovationsstrategie für einen Konzern": true,
+        "Markterschliessungsstrategie für Software-Mittelstand": true
+      },
+      "Personalmanagement & Organisation": {
+        "count": 2,
+        "Talentakquise in Hochtechnologie-Regionen": true,
+        "90-Tage-Einarbeitungsplan für Produktmanager in Technologieunternehmen": true
+      },
+      "Risikomanagement & Politik": {
+        "count": 1,
+        "Politische Stabilität und Risikomanagement": true
+      },
+      "Kundenbeziehung & Marketing": {
+        "count": 1,
+        "Kundenbindungsmassnahmen für kleine IT-Dienstleister": true
+      },
+      "Kostenmanagement & Effizienz": {
+        "count": 2,
+        "Analyse von Preismodellen für Cloud-basierte PM-Software": true,
+        "Kosten-Nutzen-Analyse von Shared-Service-Centern": true
+      }
+    }
+  },
+  "LLM C": {
+    "count": 7,
+    "subcategories": {
+      "Finanzen und Steuern": {
+        "count": 3,
+        "Steuersysteme und Unternehmensgewinne": true,
+        "Steuerliche Aspekte internationaler Expansion": true,
+        "Kosten-Nutzen-Analyse von Shared-Service-Centern": true
+      },
+      "Innovation und Strategie": {
+        "count": 4,
+        "Innovationsförderung durch Regierungen": true,
+        "Innovationsstrategie für einen Konzern": true,
+        "Geschäftsmodellinnovation durch Technologie": true,
+        "Strategien für Unternehmenswachstum": true
+      },
+      "Risikomanagement und Sicherheit": {
+        "count": 3,
+        "Risikominimierende Refaktorierungsstrategie für Legacy-Anwendungen": true,
+        "Politische Stabilität und Risikomanagement": true,
+        "Risikomanagement bei Auslandsinvestitionen": true
+      },
+      "IT und Technologie": {
+        "count": 3,
+        "Code-Review-Leitfaden für heterogene Entwicklerteams": true,
+        "Microservice-Architektur für skalierbares E-Commerce-System": true,
+        "Datenbankvergleich (SQL/NoSQL/NewSQL) für transaktionsintensive Echtzeitanwendungen": true
+      },
+      "Markt und Vertrieb": {
+        "count": 4,
+        "Marktanalyse für ein neues Produkt": true,
+        "Markterschliessungsstrategie für Software-Mittelstand": true,
+        "Markteintrittsstrategien für Schwellenländer": true,
+        "Analyse von Preismodellen für Cloud-basierte PM-Software": true
+      },
+      "Personal und Organisation": {
+        "count": 3,
+        "Talentakquise in Hochtechnologie-Regionen": true,
+        "90-Tage-Einarbeitungsplan für Produktmanager in Technologieunternehmen": true,
+        "Kundenbindungsmassnahmen für kleine IT-Dienstleister": true
+      },
+      "Wirtschaft und Globalisierung": {
+        "count": 3,
+        "Lokal vs. Global Sourcing": true,
+        "Skalierung durch internationale Partnerschaften": true,
+        "Entwicklung eines Businessmodells": true
+      }
+    }
+  }
+}
