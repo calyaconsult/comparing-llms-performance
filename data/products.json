@@ -1,0 +1,294 @@
+{
+    "Electronics": {
+        "P-L0Cbww0n-2024": {
+            "name": "QuantumX Pro Gaming Mouse",
+            "price": 49.99
+        },
+        "P-cFrFchM4-2024": {
+            "name": "SwiftSync Wireless Charging Pad",
+            "price": 29.99
+        },
+        "P-QYuJArtc-2024": {
+            "name": "LuminaCraft HD Projector",
+            "price": 199.99
+        },
+        "P-fhBynCCX-2024": {
+            "name": "NeoTech HD Webcam",
+            "price": 59.99
+        },
+        "P-HM7cNKFw-2024": {
+            "name": "PowerPulse Rapid Phone Charger",
+            "price": 19.99
+        },
+        "P-dyetCGsz-2024": {
+            "name": "EliteGamer Pro Gaming Keyboard",
+            "price": 79.99
+        },
+        "P-iS25ZoOr-2024": {
+            "name": "SonicScape 360 Virtual Reality Headset",
+            "price": 199.99
+        },
+        "P-6Zuwe8BC-2024": {
+            "name": "PowerPulse Pro Power Bank",
+            "price": 49.99
+        },
+        "P-ZEMcwpFl-2024": {
+            "name": "QuantumGlow RGB Gaming Mouse",
+            "price": 59.99
+        },
+        "P-vnFos3yD-2024": {
+            "name": "OmniSync Virtual Reality Gaming System",
+            "price": 299.99
+        }
+    },
+    "Audio": {
+        "P-TaxoaZ3S-2024": {
+            "name": "AeroTech HD Noise-Canceling Headphones",
+            "price": 129.99
+        },
+        "P-orCuJS0N-2024": {
+            "name": "TrueTone Wireless Earbuds",
+            "price": 89.99
+        },
+        "P-7tHbGHzq-2024": {
+            "name": "HarmonicBeats Wireless Bluetooth Speaker",
+            "price": 69.99
+        },
+        "P-PEiXjSgb-2024": {
+            "name": "HarmonySound Wireless Surround Sound System",
+            "price": 249.99
+        },
+        "P-Fby87VPw-2024": {
+            "name": "TrueTunes Wireless Noise-Canceling Earphones",
+            "price": 109.99
+        },
+        "P-TaxzJp3h-2024": {
+            "name": "HarmonicWave Bluetooth Shower Speaker",
+            "price": 34.99
+        },
+        "P-0G4tVkux-2024": {
+            "name": "HarmonyBeat Wireless Noise-Canceling Headphones",
+            "price": 159.99
+        }
+    },
+    "Furniture": {
+        "P-CJsCmBZZ-2024": {
+            "name": "BioFit X1 Ergonomic Office Chair",
+            "price": 199.99
+        }
+    },
+    "Home and Garden": {
+        "P-fccDNkM5-2024": {
+            "name": "SolarGlow Smart LED Garden Lights",
+            "price": 39.99
+        },
+        "P-eUXmY3Vd-2024": {
+            "name": "SolarBrite Outdoor Solar String Lights",
+            "price": 24.99
+        },
+        "P-F3U69Ngi-2024": {
+            "name": "GardenGlo LED Solar Garden Stake Lights",
+            "price": 19.99
+        },
+        "P-RQAzCEMm-2024": {
+            "name": "SolarHarmony Outdoor Solar Fountain",
+            "price": 69.99
+        },
+        "P-80WwMh84-2024": {
+            "name": "GreenGlow LED Grow Lights",
+            "price": 89.99
+        },
+        "P-KmO5DPz6-2024": {
+            "name": "SolarScape Outdoor Solar Pathway Lights",
+            "price": 24.99
+        },
+        "P-B4fQRbnp-2024": {
+            "name": "SolarBloom Solar-Powered Garden Decor",
+            "price": 39.99
+        }
+    },
+    "Kitchen": {
+        "P-6BtE3vZI-2024": {
+            "name": "GourmetChef 10-Piece Stainless Steel Cookware Set",
+            "price": 149.99
+        },
+        "P-fyNl9FIT-2024": {
+            "name": "ChefMaster Deluxe Knife Set",
+            "price": 69.99
+        },
+        "P-SmajbVJ2-2024": {
+            "name": "BioFresh Salad Spinner",
+            "price": 19.99
+        },
+        "P-w5BqmBGq-2024": {
+            "name": "ChefCraft Stainless Steel Mixing Bowls",
+            "price": 29.99
+        },
+        "P-pucGQTNx-2024": {
+            "name": "SmartBrew Coffee Maker",
+            "price": 49.99
+        },
+        "P-7V2y24rL-2024": {
+            "name": "PrecisionChef Digital Food Scale",
+            "price": 34.99
+        },
+        "P-A2IIchCX-2024": {
+            "name": "EpicChef Professional Knife Set",
+            "price": 89.99
+        },
+        "P-BohPII0T-2024": {
+            "name": "ChefSelect Non-Stick Cookware Set",
+            "price": 79.99
+        }
+    },
+    "Bedding": {
+        "P-DNsZj5L2-2024": {
+            "name": "EcoBlend Bamboo Fiber Bed Sheets",
+            "price": 54.99
+        },
+        "P-STJRGiYH-2024": {
+            "name": "SnugSleep Memory Foam Pillow",
+            "price": 29.99
+        },
+        "P-YuD9xaoT-2024": {
+            "name": "LuxeLiving Velvet Throw Blanket",
+            "price": 44.99
+        },
+        "P-D3QE38Vf-2024": {
+            "name": "RelaxRight Memory Foam Mattress Topper",
+            "price": 79.99
+        },
+        "P-t3m3hnGn-2024": {
+            "name": "CozyDreams Microfiber Pillowcases",
+            "price": 19.99
+        },
+        "P-1R1hiOMx-2024": {
+            "name": "VelvetNest Luxe Bedspread",
+            "price": 69.99
+        },
+        "P-MYtsJeKz-2024": {
+            "name": "SleepWell Orthopedic Pillow",
+            "price": 39.99
+        },
+        "P-HjcDX8Z8-2024": {
+            "name": "CozyCloud Memory Foam Mattress",
+            "price": 249.99
+        },
+        "P-hBSq5cYw-2024": {
+            "name": "CloudRest Hypoallergenic Pillows",
+            "price": 49.99
+        }
+    },
+    "Fitness": {
+        "P-MlvWIFCT-2024": {
+            "name": "FlexFit XT Fitness Tracker",
+            "price": 79.99
+        },
+        "P-Knt6nG9W-2024": {
+            "name": "HydroCraze Insulated Water Bottle",
+            "price": 19.99
+        },
+        "P-z18t7WAu-2024": {
+            "name": "FlexForm Yoga Mat",
+            "price": 24.99
+        },
+        "P-iokNYHSr-2024": {
+            "name": "AirFit Pro Resistance Bands Set",
+            "price": 34.99
+        },
+        "P-MvU7MTMY-2024": {
+            "name": "CardioMax Fitness Treadmill",
+            "price": 499.99
+        },
+        "P-FUSUlAzN-2024": {
+            "name": "ProForma Fitness Resistance Loop Bands",
+            "price": 14.99
+        },
+        "P-xJ2TWZeP-2024": {
+            "name": "AirFlex Pro Resistance Bands",
+            "price": 29.99
+        },
+        "P-5VIGl0Ag-2024": {
+            "name": "FlexFit Elite Fitness Tracker",
+            "price": 99.99
+        }
+    },
+    "Home and Living": {
+        "P-BQpMxjrX-2024": {
+            "name": "FreshWave Air Purifier",
+            "price": 89.99
+        },
+        "P-x5wVmg8P-2024": {
+            "name": "AquaFlow 3-Layer Water Filter Pitcher",
+            "price": 29.99
+        },
+        "P-ZHToueVS-2024": {
+            "name": "SolarSense Outdoor Security Camera",
+            "price": 129.99
+        },
+        "P-HGM7iZ4s-2024": {
+            "name": "SolarSense Pro Outdoor Security System",
+            "price": 199.99
+        }
+    },
+    "Wellness": {
+        "P-8S3PkE5b-2024": {
+            "name": "ZenZen Meditation Cushion",
+            "price": 34.99
+        },
+        "P-QTM3uoBo-2024": {
+            "name": "SereneSpace Aromatherapy Diffuser",
+            "price": 39.99
+        },
+        "P-uiKrq7cT-2024": {
+            "name": "TranquilZen Meditation Chair",
+            "price": 149.99
+        },
+        "P-HOLXAztY-2024": {
+            "name": "ZenSoothe Essential Oil Set",
+            "price": 29.99
+        },
+        "P-WJu3k4sn-2024": {
+            "name": "SerenitySpa Ultrasonic Aromatherapy Diffuser",
+            "price": 44.99
+        },
+        "P-rShoV2ku-2024": {
+            "name": "TranquilNest Meditation Blanket",
+            "price": 54.99
+        },
+        "P-hmEh9Z4t-2024": {
+            "name": "ZenVibe Massage Pillow",
+            "price": 49.99
+        },
+        "P-wzHgX2Xi-2024": {
+            "name": "TranquilTrance Meditation Music Player",
+            "price": 69.99
+        }
+    },
+    "Office": {
+        "P-E708EeJY-2024": {
+            "name": "ErgoLift Adjustable Laptop Stand",
+            "price": 39.99
+        },
+        "P-Uqc6bSG5-2024": {
+            "name": "ProFlex Standing Desk Converter",
+            "price": 149.99
+        }
+    },
+    "Travel": {
+        "P-d8No3SsP-2024": {
+            "name": "PureTune Noise-Canceling Earplugs",
+            "price": 14.99
+        }
+    },
+    "Eyewear": {
+        "P-OKwCF1dv-2024": {
+            "name": "iFocus Blue Light Blocking Glasses",
+            "price": 24.99
+        },
+        "P-GXm4CBVv-2024": {
+            "name": "SightGuard Blue Light Blocking Glasses",
+            "price": 29.99
+        }
+    }
+}
