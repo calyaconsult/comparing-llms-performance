@@ -63,14 +63,21 @@ function prettyPrint(node, prefix = '', isLast = true, isRoot = true) {
   });
 }
 
+/**
+ * Replaces arbitrary separator with forward slash
+ * Allows processing of CSV and other list formats
+ * @param {string} oldSeparator - original Separator, e.g., ';'
+ * @param {string} oldString - original String, e.g., 'A;B;C;D;E'
+*/
 function normalizeSeparator(oldSeparator,oldString) {
   return oldString.split(oldSeparator).join('/');
 }
 
 // Example usage
 const paths = [
-  normalizeSeparator('|',"C:|Users|Hp|Documents|Current Project|Scenarios|Diplomatic-Caution.txt"),
-  normalizeSeparator('\\',"C:\\Users\\Hp\\Documents\\Current Project\\Scenarios\\Dystopia.txt"), // Backslash must always be double backslash!
+  normalizeSeparator(',',"Products,Kitchen,Pots and Pans,Frying Pan,black"), // CSV
+  normalizeSeparator('|',"C:|Users|Hp|Documents|Current Project|Scenarios|Diplomatic-Caution.txt"), // Graph with | denoting edge
+  normalizeSeparator('\\',"C:\\Users\\Hp\\Documents\\Current Project\\Scenarios\\Dystopia.txt"), // Windows backslash (must always be double backslash!)
   '/home/user/documents/file1.txt',
   '/home/user/documents/file2.txt',
   '/home/user/images/photo.jpg',
@@ -79,5 +86,5 @@ const paths = [
 ];
 
 const tree = buildTree(paths);
-console.log('Directory Tree Structure:');
+console.log('Tree Structure:');
 prettyPrint(tree, '', true, true);
