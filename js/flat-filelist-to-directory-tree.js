@@ -1,22 +1,41 @@
+/**
+ * Transforms a list of file paths into a nested tree structure and provides visualization.
+ *
+ * Features:
+ * - Converts flat paths to hierarchical tree nodes
+ * - Handles duplicate path segments efficiently
+ * - Provides ASCII-formatted tree visualization
+ * - Processes various path formats (absolute, relative, with slashes)
+ *
+ * Usage:
+ * const tree = buildTree(['/path/to/file', 'another/path']);
+ * prettyPrint(tree);
+ */
+
 class TreeNode {
+  /**
+   * @param {string} name - Node name (path segment)
+   */
   constructor(name) {
     this.name = name;
     this.children = {};
   }
 }
 
+/**
+ * Builds a tree structure from an array of paths
+ * @param {string[]} paths - Array of file paths
+ * @returns {TreeNode} Root node of the constructed tree
+ */
 function buildTree(paths) {
   const root = new TreeNode('');
 
   for (const path of paths) {
-    // Split path into components and filter out empty parts
     const parts = path.split('/').filter(part => part !== '');
     let currentNode = root;
 
     for (const part of parts) {
-      if (!currentNode.children[part]) {
-        currentNode.children[part] = new TreeNode(part);
-      }
+      currentNode.children[part] = currentNode.children[part] || new TreeNode(part);
       currentNode = currentNode.children[part];
     }
   }
@@ -24,7 +43,13 @@ function buildTree(paths) {
   return root;
 }
 
-// Helper function to print the tree in a readable format
+/**
+ * Prints tree structure in a human-readable format
+ * @param {TreeNode} node - Root node to start printing from
+ * @param {string} prefix - Internal formatting prefix
+ * @param {boolean} isLast - If node is last child in its level
+ * @param {boolean} isRoot - If node is the tree root
+ */
 function prettyPrint(node, prefix = '', isLast = true, isRoot = true) {
   if (!isRoot) {
     console.log(prefix + (isLast ? '└── ' : '├── ') + node.name);
@@ -41,6 +66,7 @@ function prettyPrint(node, prefix = '', isLast = true, isRoot = true) {
 function normalizeSeparator(oldSeparator,oldString) {
   return oldString.split(oldSeparator).join('/');
 }
+
 // Example usage
 const paths = [
   normalizeSeparator('|',"C:|Users|Hp|Documents|Current Project|Scenarios|Diplomatic-Caution.txt"),
