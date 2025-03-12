@@ -1,4 +1,20 @@
-    function sortObject(obj) {
+/**
+CoPilot:
+This script performs the following tasks:
+
+1. Defines a function `sortObject` that recursively sorts the keys of an object, ensuring that nested objects are also sorted.
+2. Waits for the DOM to fully load using `DOMContentLoaded` event.
+3. Fetches a JSON file asynchronously from a path defined by `JSON_FILE_PATH`.
+4. Processes the fetched JSON data using the `processJsonData` function.
+5. The `processJsonData` function builds a tree view structure in the HTML:
+    - Creates category headers and subcategory headers.
+    - Displays counts of items in each category and subcategory.
+    - Lists items within each subcategory.
+    - Adds click events to toggle the visibility of categories and subcategories.
+
+The script essentially reads a JSON file, sorts its contents, and dynamically creates an interactive tree view in the HTML document based on the JSON structure.
+*/
+function sortObject(obj) {
       // If the value isn't an object or it's null, return it directly
       if (typeof obj !== 'object' || obj === null) {
         return obj;
