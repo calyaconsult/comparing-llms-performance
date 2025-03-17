@@ -1,0 +1,42 @@
+graph TD
+    S[Sentence]
+    SUBJ[Subject]
+    PRED[Predicate]
+
+    S --> SUBJ
+    S --> PRED
+
+    SUBJ --> WATASHI["私は (watashi wa)<br><i>I + topic marker</i>"]
+
+    OBJ[Object]
+    VP[Verb Phrase]
+
+    PRED --> OBJ
+    PRED --> VP
+
+    OBJ --> SUTSU["スーツを (sūtsu o)<br><i>suit + object marker</i>"]
+
+    RC[Relative Clause]
+    SUTSU --> RC
+
+    RC --> LOC[Location]
+    RC --> MITA["見た (mita)<br><i>saw</i>"]
+
+    LOC --> LP[Location Phrase]
+    LOC --> ARU["ある (aru)<br><i>exists/is located</i>"]
+    LOC --> SHOP["お店で (omise de)<br><i>in the shop</i>"]
+
+    LP --> HOTEL["ホテルの (hoteru no)<br><i>hotel + possessive</i>"]
+    LP --> MUKAI["向かいに (mukai ni)<br><i>across from + location</i>"]
+
+    VP --> KITE["着て (kite)<br><i>wear (te-form)</i>"]
+    VP --> MITAI["みたい (mitai)<br><i>want to try</i>"]
+    VP --> DESU["です (desu)<br><i>polite copula</i>"]
+
+    style S fill:#f9f,stroke:#333,stroke-width:2px
+    style SUBJ fill:#ccf,stroke:#333,stroke-width:1px
+    style PRED fill:#ccf,stroke:#333,stroke-width:1px
+    style OBJ fill:#cfc,stroke:#333,stroke-width:1px
+    style VP fill:#cfc,stroke:#333,stroke-width:1px
+    style RC fill:#fcc,stroke:#333,stroke-width:1px
+    style LOC fill:#ffc,stroke:#333,stroke-width:1px
