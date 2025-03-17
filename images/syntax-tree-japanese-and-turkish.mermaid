@@ -1,0 +1,41 @@
+graph TD
+    S[Cümle/Sentence]
+    SUBJ[Özne/Subject]
+    PRED[Yüklem/Predicate]
+
+    S --> SUBJ
+    S --> PRED
+
+    SUBJ --> BEN["Ben<br><i>I</i>"]
+
+    OBJ[Nesne/Object]
+    VP[Fiil Öbeği/Verb Phrase]
+
+    PRED --> OBJ
+    PRED --> VP
+
+    OBJ --> TAKIM["takımı<br><i>suit + accusative</i>"]
+
+    RC[Sıfat Cümlesi/Relative Clause]
+    TAKIM --> RC
+
+    RC --> LOC[Yer/Location]
+    RC --> GORDUM["gördüğüm<br><i>that I saw</i>"]
+
+    LOC --> LP[Yer Öbeği/Location Phrase]
+    LOC --> BULUNAN["bulunan<br><i>located</i>"]
+    LOC --> DUKKANDA["dükkânda<br><i>in the shop</i>"]
+
+    LP --> OTELIN["otelin<br><i>hotel's</i>"]
+    LP --> KARSISINDA["karşısında<br><i>across from</i>"]
+
+    VP --> DENEMEK["denemek<br><i>to try</i>"]
+    VP --> ISTIYORUM["istiyorum<br><i>I want</i>"]
+
+    style S fill:#f9f,stroke:#333,stroke-width:2px
+    style SUBJ fill:#ccf,stroke:#333,stroke-width:1px
+    style PRED fill:#ccf,stroke:#333,stroke-width:1px
+    style OBJ fill:#cfc,stroke:#333,stroke-width:1px
+    style VP fill:#cfc,stroke:#333,stroke-width:1px
+    style RC fill:#fcc,stroke:#333,stroke-width:1px
+    style LOC
