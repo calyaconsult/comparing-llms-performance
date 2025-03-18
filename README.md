@@ -10,3 +10,5 @@ See example files in html, data, js, css
 
 ### Convert flat file or product list to hierarchical tree structure
 See *flat-filelist-to-directory-tree.js* (for nodejs)
+
+[See on Playcode.io](https://playcode.io/2298399)
