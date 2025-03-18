@@ -1,4 +1,6 @@
 // Overwrite the definition of 'paths' in 'flat-filelist-to-directory-tree.js'
+// Screenshot of output in 'images/Screenshot 2025-03-18 095611.jpg'
+
 const paths = [
   'Electronics/Gaming/QuantumX Pro Gaming Mouse: $49.99',
   'Audio/AeroTech HD Noise-Canceling Headphones: $129.99',
