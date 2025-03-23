@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Transformations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .status-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            gap: 10px;
+            font-size: 18px;
+        }
+        .status-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            border: 2px solid black;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transpose and Rotate Matrix</h1>
+    <div class="button-container">
+        <button onclick="transposeTable()">Transpose</button>
+        <button onclick="rotateTable()">Rotate 90°</button>
+        <button onclick="resetTable()">Reset</button>
+    </div>
+    <div class="status-container">
+        <div id="statusIndicator" class="status-indicator"></div>
+        <span id="rotationCounter">0</span>°
+    </div>
+    <table id="dataTable"></table>
+
+    <script>
+        const originalMatrixNull = [
+            ['A1', 'B1', 'C1', 'D1', 'E1'],
+            ['A2', 'B2', 'C2', 'D2', 'E2'],
+            ['A3', 'B3', 'C3', 'D3', 'E3'],
+            ['A4', 'B4', 'C4', 'D4', 'E4'],
+            ['A5', 'B5', 'C5', 'D5', 'E5']
+        ];
+        const originalMatrix = [
+            ['Jahr', 'Produkte', 'Services', '3rd Party', 'Intern'],
+            ['2025', 'B2', 'C2', 'D2', 'E2'],
+            ['2024', 'B3', 'C3', 'D3', 'E3'],
+            ['2023', 'B4', 'C4', 'D4', 'E4'],
+            ['2022', 'B5', 'C5', 'D5', 'E5']
+        ];
+        let matrix = JSON.parse(JSON.stringify(originalMatrix));
+        let isTransposed = false;
+        let rotationAngle = 0;
+
+        function renderTable() {
+            const table = document.getElementById("dataTable");
+            table.innerHTML = "";
+            matrix.forEach(row => {
+                let tr = document.createElement("tr");
+                row.forEach(cell => {
+                    let td = document.createElement("td");
+                    td.textContent = cell;
+                    tr.appendChild(td);
+                });
+                table.appendChild(tr);
+            });
+        }
+
+        function updateStatus() {
+            document.getElementById("statusIndicator").style.backgroundColor = isTransposed ? "green" : "red";
+            document.getElementById("rotationCounter").textContent = rotationAngle;
+        }
+
+        function transposeTable() {
+            matrix = matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]));
+            isTransposed = !isTransposed;
+            renderTable();
+            updateStatus();
+        }
+
+        function rotateTable() {
+            matrix = matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]).reverse());
+            rotationAngle = (rotationAngle + 90) % 360;
+            renderTable();
+            updateStatus();
+        }
+
+        function resetTable() {
+            matrix = JSON.parse(JSON.stringify(originalMatrix));
+            isTransposed = false;
+            rotationAngle = 0;
+            renderTable();
+            updateStatus();
+        }
+
+        renderTable();
+        updateStatus();
+    </script>
+</body>
+</html>
