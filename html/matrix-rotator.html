@@ -58,6 +58,25 @@
             text-align: center;
             font-size: 18px;
         }
+        .old {
+            font-style: italic;
+            color: gray;
+        }
+        .r-A {
+          background-color: #fdc0cb;
+        }
+        .r-B {
+          background-color: #fde3ca;
+        }
+        .r-C {
+          background-color: #fdfdca;
+        }
+        .r-D {
+          background-color: #c1fdcc;
+        }
+        .r-E {
+          background-color: #c1e4fd;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +84,7 @@
     <div class="button-container">
         <button onclick="transposeTable()">Transpose</button>
         <button onclick="rotateTable()">Rotate 90°</button>
+        <button onclick="overlayTable()">Overlay</button>
         <button onclick="resetTable()">Reset</button>
     </div>
     <div class="status-container">
@@ -81,13 +101,15 @@
             ['A4', 'B4', 'C4', 'D4', 'E4'],
             ['A5', 'B5', 'C5', 'D5', 'E5']
         ];
-        const originalMatrix = [
+        const originalMatrixEins = [
             ['Jahr', 'Produkte', 'Services', '3rd Party', 'Intern'],
             ['2025', 'B2', 'C2', 'D2', 'E2'],
             ['2024', 'B3', 'C3', 'D3', 'E3'],
             ['2023', 'B4', 'C4', 'D4', 'E4'],
             ['2022', 'B5', 'C5', 'D5', 'E5']
         ];
+        const originalMatrix = originalMatrixNull;
+
         let matrix = JSON.parse(JSON.stringify(originalMatrix));
         let isTransposed = false;
         let rotationAngle = 0;
@@ -99,6 +121,12 @@
                 let tr = document.createElement("tr");
                 row.forEach(cell => {
                     let td = document.createElement("td");
+                    const classes = ((c) => {
+                      const parts = c.split('');
+                      return [`r-${parts[0]}`,`c-${parts[1]}`];
+                    })(cell);
+                    td.classList.add(classes[0]);
+                    td.classList.add(classes[1]);
                     td.textContent = cell;
                     tr.appendChild(td);
                 });
@@ -133,8 +161,26 @@
             updateStatus();
         }
 
+        function overlayTable() {
+            matrix = JSON.parse(JSON.stringify(originalMatrix));
+            const table = document.getElementById("dataTable");
+            const cells = table.getElementsByTagName('td');
+            let i=0;
+            for (let row=0; row<matrix.length; row++) {
+              for (let col=0; col<matrix[row].length; col++) {
+                 console.log(matrix[row][col]);
+                 const div = document.createElement('div');
+                 div.textContent = matrix[row][col];
+                 div.classList.add('old');
+                 cells[i].prepend(div);
+                 i++;
+              }
+            }
+        }
+
         renderTable();
         updateStatus();
+        console.log(originalMatrix);
     </script>
 </body>
 </html>
