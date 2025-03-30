@@ -274,7 +274,7 @@ function calculateSecondaryCoords(primaryRow, primaryCol) {
     // Default calculation: [secondary.row, secondary.col] = [primary.col, 4 * -primary.row]
     return {
         row: primaryCol,
-        col: CONFIG.tableSize * -primaryRow
+        col: CONFIG.tableSize - primaryRow // Original file had an asterisk before the minus sign which resulted in wrong calculations
     };
 }
 
