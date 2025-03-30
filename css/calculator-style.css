@@ -1,0 +1,141 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Calculator Container */
+.calculator-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+.calculator-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Input Section */
+.input-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: inline-block;
+    width: 80px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.coord-input {
+    padding: 8px 12px;
+    width: 70px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.coord-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Button Styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+}
+
+/* Visualization Section */
+.visualization-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.table-container {
+    flex: 1;
+}
+
+.table-label {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.coord-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.coord-table th, .coord-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    min-width: 40px;
+    height: 40px;
+}
+
+.coord-table td {
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+/* Highlight Styles */
+.highlight-primary {
+    background-color: #ffdddd !important;
+    font-weight: bold;
+}
+
+.highlight-secondary {
+    background-color: #ddffdd !important;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .visualization-section {
+        flex-direction: column;
+    }
+
+    .calculator-container {
+        padding: 15px;
+    }
+}
